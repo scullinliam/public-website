@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | William (Liam) Scullin II</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
+	<div class="container">
+	  <a class="navbar-brand" href="index.html">WS<span class="text-primary">.</span></a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="mainNav">
+		<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+		  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+		  <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+		  <li class="nav-item"><a class="nav-link" href="experience.html">Experience/Education</a></li>
+		  <li class="nav-item"><a class="nav-link active" href="projects.html" aria-current="page">Projects</a></li>
+		  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+		  <li class="nav-item ms-lg-2"><button class="btn btn-sm btn-outline-primary" id="themeToggle" type="button">Dark mode</button></li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+  <main>
+	<section class="page-banner">
+	  <div class="container">
+		<div class="eyebrow mb-2">Selected work</div>
+		<h1 class="display-4">Projects</h1>
+		<p class="lead mb-0">Explore academic and professional work in data analytics, sports analytics, tax, audit, and consulting.</p>
+	  </div>
+	</section>
+	<section class="section-space">
+	  <div class="container">
+		<div class="filter-bar mb-4">
+		  <div class="d-flex flex-wrap gap-2" role="group" aria-label="Filter projects by category">
+			<button class="btn btn-sm btn-primary active" data-category="All" type="button">All</button>
+			<button class="btn btn-sm btn-outline-primary" data-category="Data Analytics" type="button">Data Analytics</button>
+			<button class="btn btn-sm btn-outline-primary" data-category="Sports Analytics" type="button">Sports Analytics</button>
+			<button class="btn btn-sm btn-outline-primary" data-category="Tax" type="button">Tax</button>
+			<button class="btn btn-sm btn-outline-primary" data-category="Audit" type="button">Audit</button>
+			<button class="btn btn-sm btn-outline-primary" data-category="Professional Experience" type="button">Professional Experience</button>
+		  </div>
+		</div>
+		<p class="text-secondary small" id="projectStatus" aria-live="polite">Loading projects...</p>
+		<div class="row g-4" id="projectGrid" aria-live="polite"></div>
+	  </div>
+	</section>
+  </main>
+  <footer>
+	<div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+	  <span>© <span data-current-year></span> William (Liam) Scullin II</span>
+	  <span>Designed and built with curiosity.</span>
+	</div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
